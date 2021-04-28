@@ -14,14 +14,14 @@ namespace senai.hroads.webApi.Context
         }
 
         public HroadsContext(DbContextOptions<HroadsContext> options)
-            : base(options)
+            : base(options) 
         {
         }
 
-        public virtual DbSet<Class> Classes { get; set; }
+        public virtual DbSet<Classes> Classes { get; set; }
         public virtual DbSet<Habilidade> Habilidades { get; set; }
         public virtual DbSet<Intermediaria> Intermediarias { get; set; }
-        public virtual DbSet<Personagen> Personagens { get; set; }
+        public virtual DbSet<Personagens> Personagens { get; set; }
         public virtual DbSet<Tipo> Tipos { get; set; }
         public virtual DbSet<TipoUsuario> TipoUsuarios { get; set; }
         public virtual DbSet<Usuario> Usuarios { get; set; }
@@ -30,7 +30,7 @@ namespace senai.hroads.webApi.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseSqlServer("Data Source=DESKTOP-OVJKG6T\\SQLEXPRESS; initial catalog=SENAI_HROADS_TARDE; user Id=sa; pwd=Ted16m12");
             }
         }
@@ -39,7 +39,7 @@ namespace senai.hroads.webApi.Context
         {
             modelBuilder.HasAnnotation("Relational:Collation", "Latin1_General_CI_AS");
 
-            modelBuilder.Entity<Class>(entity =>
+            modelBuilder.Entity<Classes>(entity =>
             {
                 entity.HasKey(e => e.IdClasse)
                     .HasName("PK__Classes__60FFF801C3053855");
@@ -86,7 +86,7 @@ namespace senai.hroads.webApi.Context
                     .HasConstraintName("FK__Intermedi__idHab__3E52440B");
             });
 
-            modelBuilder.Entity<Personagen>(entity =>
+            modelBuilder.Entity<Personagens>(entity =>
             {
                 entity.HasKey(e => e.IdPersonagem)
                     .HasName("PK__Personag__E175C72EF1C3FFDC");

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace senai.hroads.webApi.Domains
 {
-    public partial class Personagen
+    public partial class Personagens
     {
         public int IdPersonagem { get; set; }
         public int? IdClasse { get; set; }
@@ -15,6 +15,6 @@ namespace senai.hroads.webApi.Domains
         public DateTime? DatadeAtualizacao { get; set; }
         public DateTime? DatadeCriacao { get; set; }
 
-        public virtual Class IdClasseNavigation { get; set; }
+        public virtual Classes IdClasseNavigation { get; set; }
     }
 }
