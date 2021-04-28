@@ -27,6 +27,13 @@ namespace senai.hroads.webApi.Repositories
             return ctx.Usuarios.Find(id);
         }
 
+        public void Cadastrar(Usuario novoUsuario)
+        {
+            ctx.Usuarios.Add(novoUsuario);
+
+            ctx.SaveChanges();
+        }
+
         public void Deletar(int id)
         {
             Usuario BuscarUsuario = ctx.Usuarios.Find(id);

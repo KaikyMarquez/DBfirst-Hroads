@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using senai.hroads.webApi.Domains;
 using senai.hroads.webApi.Interfaces;
 using senai.hroads.webApi.Repositories;
 using System;
@@ -15,7 +16,7 @@ namespace senai.hroads.webApi.Controllers
     public class ClassesController : ControllerBase
     {
 
-        private IClasseRepository  _classesRepository { get; set; }
+        private IClasseRepository _classesRepository { get; set; }
 
         public ClassesController()
         {
@@ -40,7 +41,7 @@ namespace senai.hroads.webApi.Controllers
 
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public IActionResult Put(int id, Classes classeAtt)
         {
 
@@ -50,7 +51,7 @@ namespace senai.hroads.webApi.Controllers
 
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
 
@@ -64,7 +65,7 @@ namespace senai.hroads.webApi.Controllers
         public IActionResult Create(Classes newClass)
         {
 
-            Created(_classesRepository.Cadastar(newClass));
+            _classesRepository.Cadastar(newClass);
 
             return StatusCode(201);
 

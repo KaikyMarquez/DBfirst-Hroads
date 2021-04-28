@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using senai.hroads.webApi.Domains;
 using senai.hroads.webApi.Interfaces;
 using senai.hroads.webApi.Repositories;
 using System;
@@ -28,7 +29,7 @@ namespace senai.hroads.webApi.Controllers
         public IActionResult Get()
         {
 
-            return Ok(_usuarioRepository.BuscarPorId(id));
+            return Ok(_usuarioRepository.ListarTodos());
 
         }
 
@@ -36,7 +37,7 @@ namespace senai.hroads.webApi.Controllers
         public IActionResult Put(int id, Usuario usuarioAtt)
         {
 
-            
+            return StatusCode(200);
 
         }
 

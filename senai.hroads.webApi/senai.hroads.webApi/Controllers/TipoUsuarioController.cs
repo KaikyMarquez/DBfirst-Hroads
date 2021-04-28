@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using senai.hroads.webApi.Domains;
 using senai.hroads.webApi.Interfaces;
 using senai.hroads.webApi.Repositories;
 using System;
@@ -15,7 +16,7 @@ namespace senai.hroads.webApi.Controllers
     public class TipoUsuarioController : ControllerBase
     {
 
-        private TipoUsuario _tipoUsuarioRepository { get; set; }
+        private ITipoUsuarioRepository _tipoUsuarioRepository { get; set; }
 
         public TipoUsuarioController()
         {

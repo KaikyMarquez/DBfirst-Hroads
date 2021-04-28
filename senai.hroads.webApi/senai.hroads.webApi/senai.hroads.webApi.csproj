@@ -10,11 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="D:\Senai\Saves aleatorios\ClassesController.cs" Link="ClassesController.cs" />
-    <Compile Include="D:\Senai\Saves aleatorios\UsuarioController.cs" Link="UsuarioController.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.5">

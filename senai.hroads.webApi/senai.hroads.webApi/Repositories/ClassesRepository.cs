@@ -15,11 +15,13 @@ namespace senai.hroads.webApi.Repositories
         public void Atualizar(int id, Classes AtualizarClasse)
         {
             Classes ClasseBuscada = ctx.Classes.Find(id);
+
             if (AtualizarClasse.Classe != null)
             {
                 ClasseBuscada.Classe = AtualizarClasse.Classe;
             }
             ctx.Classes.Update(ClasseBuscada);
+
             ctx.SaveChanges();
         }
 

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kaiky\\Documents\\GitHub\\DBfirst-Hroads\\senai.hroads.webApi\\senai.hroads.webApi\\senai.hroads.webApi.csproj": {}
+    "C:\\Users\\vinyl\\OneDrive\\Documentos\\GitHub\\DBfirst-Hroads\\senai.hroads.webApi\\senai.hroads.webApi\\senai.hroads.webApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kaiky\\Documents\\GitHub\\DBfirst-Hroads\\senai.hroads.webApi\\senai.hroads.webApi\\senai.hroads.webApi.csproj": {
+    "C:\\Users\\vinyl\\OneDrive\\Documentos\\GitHub\\DBfirst-Hroads\\senai.hroads.webApi\\senai.hroads.webApi\\senai.hroads.webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kaiky\\Documents\\GitHub\\DBfirst-Hroads\\senai.hroads.webApi\\senai.hroads.webApi\\senai.hroads.webApi.csproj",
+        "projectUniqueName": "C:\\Users\\vinyl\\OneDrive\\Documentos\\GitHub\\DBfirst-Hroads\\senai.hroads.webApi\\senai.hroads.webApi\\senai.hroads.webApi.csproj",
         "projectName": "senai.hroads.webApi",
-        "projectPath": "C:\\Users\\Kaiky\\Documents\\GitHub\\DBfirst-Hroads\\senai.hroads.webApi\\senai.hroads.webApi\\senai.hroads.webApi.csproj",
-        "packagesPath": "C:\\Users\\Kaiky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kaiky\\Documents\\GitHub\\DBfirst-Hroads\\senai.hroads.webApi\\senai.hroads.webApi\\obj\\",
+        "projectPath": "C:\\Users\\vinyl\\OneDrive\\Documentos\\GitHub\\DBfirst-Hroads\\senai.hroads.webApi\\senai.hroads.webApi\\senai.hroads.webApi.csproj",
+        "packagesPath": "C:\\Users\\vinyl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vinyl\\OneDrive\\Documentos\\GitHub\\DBfirst-Hroads\\senai.hroads.webApi\\senai.hroads.webApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kaiky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vinyl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,6 +53,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.5, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.11.0, )"
             }
           },
           "imports": [

@@ -17,5 +17,7 @@ namespace senai.hroads.webApi.Interfaces
 
         void Atualizar(int id, Usuario NovoUsuario);
 
+        void Cadastrar(Usuario novoUsuario);
+
     }
 }
